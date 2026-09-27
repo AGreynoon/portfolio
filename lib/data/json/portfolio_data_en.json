@@ -103,6 +103,15 @@
       ]
     }
   ],
+  "education": [
+    {
+      "id": "hadhramaut-university",
+      "degree": "Bachelor's degree, Computer Science",
+      "institution": "Hadhramaut University",
+      "period": "09/2018 – 09/2022",
+      "location": "Al Mukalla, Yemen"
+    }
+  ],
   "skills": [
     "Flutter",
     "Dart",

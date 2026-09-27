@@ -3,6 +3,8 @@ import 'package:jaspr/jaspr.dart';
 import 'package:jaspr_riverpod/jaspr_riverpod.dart';
 
 import '../components/action_chips.dart';
+import '../components/contact_section.dart';
+import '../components/education_section.dart';
 import '../components/experience_section.dart';
 import '../components/footer.dart';
 import '../components/profile_header.dart';
@@ -30,8 +32,10 @@ class HomePage extends StatelessComponent {
         ProfileHeader(locale: locale),
         ActionChips(locale: locale),
         ExperienceSection(locale: locale),
+        EducationSection(locale: locale),
         SkillsSection(locale: locale),
         ProjectList(locale: locale),
+        ContactSection(locale: locale),
         Footer(locale: locale),
       ],
     );

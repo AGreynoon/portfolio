@@ -1,8 +1,10 @@
 {
   "sections": {
     "experienceTitle": "Work Experience",
+    "educationTitle": "Education",
     "skillsTitle": "Tools & Technologies",
-    "projectsTitle": "Featured Projects"
+    "projectsTitle": "Featured Projects",
+    "contactTitle": "Get In Touch"
   },
   "detail": {
     "backToHome": "← Back to Home",
@@ -17,6 +19,17 @@
     "projectLinks": "Project Links & Platforms",
     "close": "Close",
     "availableForDownload": "Available for Download"
+  },
+  "contact": {
+    "subtitle": "Have a project inquiry, collaboration opportunity, or question? Send a message directly via WhatsApp or Email.",
+    "emailPlaceholder": "Your email address (required to send email)...",
+    "messagePlaceholder": "Write your message here...",
+    "sendWhatsAppButton": "Send via WhatsApp",
+    "sendEmailButton": "Send via Email",
+    "sendButton": "Send via WhatsApp",
+    "validationError": "Please write a message before sending.",
+    "emailValidationError": "Please enter your email address to send an email.",
+    "directWhatsApp": "Direct WhatsApp: +967 734 633 105"
   },
   "footer": {
     "copyright": "© 2026 Ahmed Ameen Greynoon. Crafted with Jaspr (Dart)."

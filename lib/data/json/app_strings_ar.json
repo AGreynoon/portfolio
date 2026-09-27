@@ -1,8 +1,10 @@
 {
   "sections": {
     "experienceTitle": "الخبرات المهنية",
+    "educationTitle": "التعليم الأكاديمي",
     "skillsTitle": "المهارات والتقنيات",
-    "projectsTitle": "المشاريع المميزة"
+    "projectsTitle": "المشاريع المميزة",
+    "contactTitle": "تواصل معي"
   },
   "detail": {
     "backToHome": "← العودة للرئيسية",
@@ -17,6 +19,17 @@
     "projectLinks": "روابط المشروع والمنصات",
     "close": "إغلاق",
     "availableForDownload": "متاح للتحميل"
+  },
+  "contact": {
+    "subtitle": "هل لديك استفسار عن مشروع، فرصة تعاون، أو سؤال؟ أرسل لي رسالة مباشرة عبر واتساب أو البريد الإلكتروني.",
+    "emailPlaceholder": "بريدك الإلكتروني (مطلوب للإرسال عبر الإيميل)...",
+    "messagePlaceholder": "اكتب رسالتك هنا...",
+    "sendWhatsAppButton": "إرسال عبر واتساب",
+    "sendEmailButton": "إرسال عبر البريد الإلكتروني",
+    "sendButton": "إرسال عبر واتساب",
+    "validationError": "يرجى كتابة رسالة قبل الإرسال.",
+    "emailValidationError": "يرجى إدخال بريدك الإلكتروني لإرسال الرسالة عبر البريد.",
+    "directWhatsApp": "واتساب مباشر: 105 633 734 967+"
   },
   "footer": {
     "copyright": "© 2026 أحمد أمين جرينون. صُمم بأناقة باستخدام Jaspr (Dart)."

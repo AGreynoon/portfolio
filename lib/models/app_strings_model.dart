@@ -7,12 +7,14 @@ class AppStringsModel {
   final DetailStringsModel detail;
   final FooterStringsModel footer;
   final ActionStringsModel actions;
+  final ContactStringsModel contact;
 
   const AppStringsModel({
     required this.sections,
     required this.detail,
     required this.footer,
     required this.actions,
+    required this.contact,
   });
 
   factory AppStringsModel.fromJson(Map<String, dynamic> json) {
@@ -21,6 +23,7 @@ class AppStringsModel {
       detail: DetailStringsModel.fromJson(json['detail'] as Map<String, dynamic>? ?? {}),
       footer: FooterStringsModel.fromJson(json['footer'] as Map<String, dynamic>? ?? {}),
       actions: ActionStringsModel.fromJson(json['actions'] as Map<String, dynamic>? ?? {}),
+      contact: ContactStringsModel.fromJson(json['contact'] as Map<String, dynamic>? ?? {}),
     );
   }
 
@@ -39,19 +42,25 @@ typedef AppStrings = AppStringsModel;
 
 class SectionStringsModel {
   final String experienceTitle;
+  final String educationTitle;
   final String skillsTitle;
   final String projectsTitle;
+  final String contactTitle;
 
   const SectionStringsModel({
     required this.experienceTitle,
+    required this.educationTitle,
     required this.skillsTitle,
     required this.projectsTitle,
+    required this.contactTitle,
   });
 
   factory SectionStringsModel.fromJson(Map<String, dynamic> json) => SectionStringsModel(
     experienceTitle: json['experienceTitle'] as String? ?? 'Work Experience',
+    educationTitle: json['educationTitle'] as String? ?? 'Education',
     skillsTitle: json['skillsTitle'] as String? ?? 'Tools & Technologies',
     projectsTitle: json['projectsTitle'] as String? ?? 'Featured Projects',
+    contactTitle: json['contactTitle'] as String? ?? 'Contact Me',
   );
 }
 
@@ -150,3 +159,51 @@ class ActionStringsModel {
 }
 
 typedef ActionStrings = ActionStringsModel;
+
+class ContactStringsModel {
+  final String subtitle;
+  final String emailPlaceholder;
+  final String messagePlaceholder;
+  final String sendWhatsAppButton;
+  final String sendEmailButton;
+  final String sendButton;
+  final String validationError;
+  final String emailValidationError;
+  final String directWhatsApp;
+
+  const ContactStringsModel({
+    required this.subtitle,
+    required this.emailPlaceholder,
+    required this.messagePlaceholder,
+    required this.sendWhatsAppButton,
+    required this.sendEmailButton,
+    required this.sendButton,
+    required this.validationError,
+    required this.emailValidationError,
+    required this.directWhatsApp,
+  });
+
+  factory ContactStringsModel.fromJson(Map<String, dynamic> json) {
+    final sendWa = json['sendWhatsAppButton'] as String? ??
+        json['sendButton'] as String? ??
+        'Send via WhatsApp';
+    return ContactStringsModel(
+      subtitle: json['subtitle'] as String? ?? '',
+      emailPlaceholder: json['emailPlaceholder'] as String? ??
+          'Your email (required to send email)...',
+      messagePlaceholder: json['messagePlaceholder'] as String? ??
+          'Write your message here...',
+      sendWhatsAppButton: sendWa,
+      sendEmailButton: json['sendEmailButton'] as String? ?? 'Send via Email',
+      sendButton: sendWa,
+      validationError: json['validationError'] as String? ??
+          'Please write a message before sending.',
+      emailValidationError: json['emailValidationError'] as String? ??
+          'Please enter your email address to send an email.',
+      directWhatsApp: json['directWhatsApp'] as String? ??
+          'Direct WhatsApp: +967 734 633 105',
+    );
+  }
+}
+
+typedef ContactStrings = ContactStringsModel;

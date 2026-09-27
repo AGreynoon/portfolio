@@ -97,6 +97,15 @@
       ]
     }
   ],
+  "education": [
+    {
+      "id": "hadhramaut-university",
+      "degree": "بكالوريوس في علوم الحاسوب",
+      "institution": "جامعة حضرموت",
+      "period": "09/2018 – 09/2022",
+      "location": "المكلا، اليمن"
+    }
+  ],
   "projects": [
     {
       "id": "time-of-necessity",

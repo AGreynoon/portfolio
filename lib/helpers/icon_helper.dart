@@ -344,6 +344,52 @@ class AppIconsHelper {
       ],
     );
   }
+
+  /// Academic graduation cap icon for education qualifications.
+  static Component education({double size = 16, String? classes}) {
+    final s = size.toInt().toString();
+    return .element(
+      tag: 'svg',
+      classes: classes,
+      attributes: {
+        'viewBox': '0 0 24 24',
+        'width': s,
+        'height': s,
+        'fill': 'none',
+        'stroke': 'currentColor',
+        'stroke-width': '2',
+        'stroke-linecap': 'round',
+        'stroke-linejoin': 'round',
+      },
+      children: [
+        .element(tag: 'path', attributes: {'d': 'M22 10v6M2 10l10-5 10 5-10 5z'}),
+        .element(tag: 'path', attributes: {'d': 'M6 12v5c3 3 9 3 12 0v-5'}),
+      ],
+    );
+  }
+
+  /// Send / paper airplane icon for contact messaging.
+  static Component send({double size = 15, String? classes}) {
+    final s = size.toInt().toString();
+    return .element(
+      tag: 'svg',
+      classes: classes,
+      attributes: {
+        'viewBox': '0 0 24 24',
+        'width': s,
+        'height': s,
+        'fill': 'none',
+        'stroke': 'currentColor',
+        'stroke-width': '2',
+        'stroke-linecap': 'round',
+        'stroke-linejoin': 'round',
+      },
+      children: [
+        .element(tag: 'line', attributes: {'x1': '22', 'y1': '2', 'x2': '11', 'y2': '13'}),
+        .element(tag: 'polygon', attributes: {'points': '22 2 15 22 11 13 2 9 22 2'}),
+      ],
+    );
+  }
 }
 
 typedef AppIcons = AppIconsHelper;

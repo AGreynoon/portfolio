@@ -597,6 +597,114 @@ img {
 }
 
 /* ==========================================================================
+   Education Section
+   ========================================================================== */
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.education-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.education-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.education-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.education-degree-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.education-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: var(--bg-surface-active);
+  color: var(--text-primary);
+  flex-shrink: 0;
+  border: 1px solid var(--border-subtle);
+}
+
+.education-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.education-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.education-degree {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+.education-institution {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.education-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.education-period-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.775rem;
+  font-weight: 600;
+  background-color: var(--badge-bg);
+  border: 1px solid var(--badge-border);
+  color: var(--badge-text);
+}
+
+.education-location-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.775rem;
+  font-weight: 500;
+  background-color: var(--bg-surface-active);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
    Tools, Frameworks & Languages (Skill Cloud)
    ========================================================================== */
 
@@ -1218,6 +1326,199 @@ img {
 }
 
 /* ==========================================================================
+   Contact Me Form Section
+   ========================================================================== */
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  border-color: var(--border-strong);
+}
+
+.contact-description {
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contact-textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.925rem;
+  line-height: 1.6;
+  resize: vertical;
+  min-height: 110px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  outline: none;
+}
+
+.contact-textarea:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 2px rgba(115, 115, 115, 0.15);
+}
+
+.contact-textarea.has-error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.15);
+}
+
+.contact-error-text {
+  font-size: 0.8rem;
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.contact-email-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.925rem;
+  line-height: 1.5;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  outline: none;
+}
+
+.contact-email-input:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 2px rgba(115, 115, 115, 0.15);
+}
+
+.contact-email-input.has-error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.15);
+}
+
+.contact-actions-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.contact-buttons-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1.35rem;
+  border-radius: 8px;
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border: 1px solid var(--btn-primary-bg);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease, background-color 0.15s ease;
+}
+
+.contact-whatsapp-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+.contact-whatsapp-btn:active {
+  transform: translateY(0);
+}
+
+.contact-whatsapp-btn svg {
+  fill: currentColor;
+}
+
+.contact-email-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1.35rem;
+  border-radius: 8px;
+  background-color: var(--bg-surface-active);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.contact-email-btn:hover {
+  transform: translateY(-2px);
+  background-color: var(--bg-surface-hover);
+  border-color: var(--border-strong);
+}
+
+.contact-email-btn:active {
+  transform: translateY(0);
+}
+
+.contact-email-btn svg {
+  fill: currentColor;
+}
+
+.contact-direct-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 9999px;
+  background-color: var(--bg-surface-active);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.contact-direct-pill:hover {
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+.contact-direct-pill svg {
+  fill: currentColor;
+}
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 
@@ -1282,5 +1583,29 @@ img {
     width: 42px;
     height: 42px;
     border-radius: 10px;
+  }
+
+  .education-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-actions-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-buttons-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-whatsapp-btn,
+  .contact-email-btn {
+    width: 100%;
+  }
+
+  .contact-direct-pill {
+    justify-content: center;
   }
 }

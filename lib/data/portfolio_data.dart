@@ -1,4 +1,5 @@
 import 'raw/portfolio_data_raw.dart';
+import '../models/education_model.dart';
 import '../models/experience_model.dart';
 import '../models/localized_text_model.dart';
 import '../models/project_model.dart';
@@ -37,6 +38,8 @@ class PortfolioData {
   ];
 
   static final List<CompanyExperienceModel> companyExperiences = _buildCompanyExperiences();
+
+  static final List<EducationModel> education = _buildEducation();
 
   static final List<String> skills = List<String>.from(_en['skills'] as List);
 
@@ -170,6 +173,43 @@ class PortfolioData {
             repoUrl: pMap['repoUrl'] as String?,
             liveUrl: pMap['liveUrl'] as String?,
             apkUrl: pMap['apkUrl'] as String?,
+          );
+        }(),
+      ],
+    ];
+  }
+
+  static List<EducationModel> _buildEducation() {
+    final enList = (_en['education'] as List?) ?? [];
+    final arList = (_ar['education'] as List?) ?? [];
+
+    return [
+      for (int i = 0; i < enList.length; i++) ...[
+        () {
+          final enEdu = enList[i] as Map<String, dynamic>;
+          final arEdu = (arList.firstWhere(
+            (e) => e['id'] == enEdu['id'],
+            orElse: () => enEdu,
+          ) as Map<String, dynamic>);
+
+          return EducationModel(
+            id: enEdu['id'] as String,
+            degree: LocalizedTextModel(
+              en: enEdu['degree'] as String,
+              ar: (arEdu['degree'] ?? enEdu['degree']) as String,
+            ),
+            institution: LocalizedTextModel(
+              en: enEdu['institution'] as String,
+              ar: (arEdu['institution'] ?? enEdu['institution']) as String,
+            ),
+            period: LocalizedTextModel(
+              en: enEdu['period'] as String,
+              ar: (arEdu['period'] ?? enEdu['period']) as String,
+            ),
+            location: LocalizedTextModel(
+              en: enEdu['location'] as String,
+              ar: (arEdu['location'] ?? enEdu['location']) as String,
+            ),
           );
         }(),
       ],

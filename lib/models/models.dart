@@ -1,4 +1,6 @@
 export 'app_strings_model.dart';
+export 'contact_form_model.dart';
+export 'education_model.dart';
 export 'experience_model.dart';
 export 'localized_text_model.dart';
 export '../data/portfolio_data.dart';

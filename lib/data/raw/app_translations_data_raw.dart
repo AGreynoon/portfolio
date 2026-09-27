@@ -7,8 +7,10 @@ abstract final class AppTranslationsDataRaw {
   static const String enJson = r'''{
   "sections": {
     "experienceTitle": "Work Experience",
+    "educationTitle": "Education",
     "skillsTitle": "Tools & Technologies",
-    "projectsTitle": "Featured Projects"
+    "projectsTitle": "Featured Projects",
+    "contactTitle": "Get In Touch"
   },
   "detail": {
     "backToHome": "← Back to Home",
@@ -23,6 +25,17 @@ abstract final class AppTranslationsDataRaw {
     "projectLinks": "Project Links & Platforms",
     "close": "Close",
     "availableForDownload": "Available for Download"
+  },
+  "contact": {
+    "subtitle": "Have a project inquiry, collaboration opportunity, or question? Send a message directly via WhatsApp or Email.",
+    "emailPlaceholder": "Your email address (required to send email)...",
+    "messagePlaceholder": "Write your message here...",
+    "sendWhatsAppButton": "Send via WhatsApp",
+    "sendEmailButton": "Send via Email",
+    "sendButton": "Send via WhatsApp",
+    "validationError": "Please write a message before sending.",
+    "emailValidationError": "Please enter your email address to send an email.",
+    "directWhatsApp": "Direct WhatsApp: +967 734 633 105"
   },
   "footer": {
     "copyright": "© 2026 Ahmed Ameen Greynoon. Crafted with Jaspr (Dart)."
@@ -42,8 +55,10 @@ abstract final class AppTranslationsDataRaw {
   static const String arJson = r'''{
   "sections": {
     "experienceTitle": "الخبرات المهنية",
+    "educationTitle": "التعليم الأكاديمي",
     "skillsTitle": "المهارات والتقنيات",
-    "projectsTitle": "المشاريع المميزة"
+    "projectsTitle": "المشاريع المميزة",
+    "contactTitle": "تواصل معي"
   },
   "detail": {
     "backToHome": "← العودة للرئيسية",
@@ -58,6 +73,17 @@ abstract final class AppTranslationsDataRaw {
     "projectLinks": "روابط المشروع والمنصات",
     "close": "إغلاق",
     "availableForDownload": "متاح للتحميل"
+  },
+  "contact": {
+    "subtitle": "هل لديك استفسار عن مشروع، فرصة تعاون، أو سؤال؟ أرسل لي رسالة مباشرة عبر واتساب أو البريد الإلكتروني.",
+    "emailPlaceholder": "بريدك الإلكتروني (مطلوب للإرسال عبر الإيميل)...",
+    "messagePlaceholder": "اكتب رسالتك هنا...",
+    "sendWhatsAppButton": "إرسال عبر واتساب",
+    "sendEmailButton": "إرسال عبر البريد الإلكتروني",
+    "sendButton": "إرسال عبر واتساب",
+    "validationError": "يرجى كتابة رسالة قبل الإرسال.",
+    "emailValidationError": "يرجى إدخال بريدك الإلكتروني لإرسال الرسالة عبر البريد.",
+    "directWhatsApp": "واتساب مباشر: 105 633 734 967+"
   },
   "footer": {
     "copyright": "© 2026 أحمد أمين جرينون. صُمم بأناقة باستخدام Jaspr (Dart)."

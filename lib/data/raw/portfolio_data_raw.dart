@@ -108,6 +108,15 @@ abstract final class PortfolioDataRaw {
       ]
     }
   ],
+  "education": [
+    {
+      "id": "hadhramaut-university",
+      "degree": "Bachelor's degree, Computer Science",
+      "institution": "Hadhramaut University",
+      "period": "09/2018 – 09/2022",
+      "location": "Al Mukalla, Yemen"
+    }
+  ],
   "skills": [
     "Flutter",
     "Dart",
@@ -367,6 +376,15 @@ abstract final class PortfolioDataRaw {
           ]
         }
       ]
+    }
+  ],
+  "education": [
+    {
+      "id": "hadhramaut-university",
+      "degree": "بكالوريوس في علوم الحاسوب",
+      "institution": "جامعة حضرموت",
+      "period": "09/2018 – 09/2022",
+      "location": "المكلا، اليمن"
     }
   ],
   "projects": [
