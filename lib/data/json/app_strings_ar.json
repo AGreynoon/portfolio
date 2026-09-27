@@ -1,0 +1,34 @@
+{
+  "sections": {
+    "experienceTitle": "الخبرات المهنية",
+    "skillsTitle": "المهارات والتقنيات",
+    "projectsTitle": "المشاريع المميزة"
+  },
+  "detail": {
+    "backToHome": "← العودة للرئيسية",
+    "projectNotFound": "المشروع غير موجود",
+    "projectNotFoundDesc": "المشروع الذي تبحث عنه غير متوفر أو تم نقله.",
+    "aboutProject": "عن المشروع",
+    "myRole": "دوري في المشروع",
+    "keyContributions": "المساهمات والمسؤوليات الرئيسية",
+    "screenshotGallery": "معرض لقطات الشاشة",
+    "clickToEnlarge": "(انقر للتكبير)",
+    "technologiesUsed": "التقنيات المستخدمة",
+    "projectLinks": "روابط المشروع والمنصات",
+    "close": "إغلاق",
+    "availableForDownload": "متاح للتحميل"
+  },
+  "footer": {
+    "copyright": "© 2026 أحمد أمين جرينون. صُمم بأناقة باستخدام Jaspr (Dart)."
+  },
+  "actions": {
+    "playStore": "جوجل بلاي",
+    "appStore": "آب ستور",
+    "website": "الموقع الإلكتروني",
+    "codeRepo": "مستودع الكود (GitHub)",
+    "liveDemo": "معاينة مباشرة",
+    "downloadApk": "تحميل ملف APK",
+    "downloadCv": "تحميل السيرة الذاتية",
+    "viewProject": "عرض تفاصيل المشروع"
+  }
+}

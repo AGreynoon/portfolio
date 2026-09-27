@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f1f1f"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="100" fill="url(#avatarGrad)"/>
+  <circle cx="100" cy="100" r="96" fill="none" stroke="#333333" stroke-width="2"/>
+  <!-- Stylized Monogram AG -->
+  <text x="100" y="118" font-family="'Inter', -apple-system, sans-serif" font-size="58" font-weight="700" fill="#f5f5f5" text-anchor="middle" letter-spacing="-2">AG</text>
+  <circle cx="100" cy="155" r="4" fill="#737373"/>
+</svg>
