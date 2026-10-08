@@ -131,16 +131,6 @@ class ContactSection extends StatelessComponent {
                 ],
               ),
             ]),
-            a(
-              href: 'https://wa.me/$_whatsAppPhone',
-              target: Target.blank,
-              classes: 'contact-direct-pill',
-              attributes: {'aria-label': 'Direct WhatsApp chat'},
-              [
-                AppIconsHelper.social('whatsapp', size: 14),
-                span([.text(strings.contact.directWhatsApp)]),
-              ],
-            ),
           ]),
         ]),
       ]),
