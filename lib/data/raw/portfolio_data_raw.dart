@@ -159,7 +159,6 @@ abstract final class PortfolioDataRaw {
         "Automated build and release pipelines with Codemagic CI/CD, managing deployments to Google Play and Apple App Store.",
         "Integrated Firebase, Sentry, and Microsoft Clarity for real-time crash monitoring and UX telemetry."
       ],
-      "coverImage": "images/projects/waqt-al-luzoom.svg",
       "logo": "images/project_images/time_of_necessity/logo.png",
       "screenshots": [
         "images/project_images/time_of_necessity/01.jpg",
@@ -197,7 +196,6 @@ abstract final class PortfolioDataRaw {
         "Integrated Sentry and Microsoft Clarity to track user friction, resolve crash reports, and optimize conversion flows.",
         "Maintained Codemagic CI/CD workflows for seamless continuous delivery to Apple App Store and Google Play."
       ],
-      "coverImage": "images/projects/tahara.svg",
       "logo": "images/project_images/tahara/logo.png",
       "screenshots": [
         "images/project_images/tahara/01.png",
@@ -240,7 +238,6 @@ abstract final class PortfolioDataRaw {
         "Built a minimalist, reader-centric interface focused on typography and zero distraction.",
         "Managed release cycles, APK packaging, and open-source distribution via GitHub Releases."
       ],
-      "coverImage": "images/projects/nasha.svg",
       "logo": "images/project_images/nasha/logo.png",
       "screenshots": [
         "images/project_images/nasha/01.png",
@@ -260,21 +257,39 @@ abstract final class PortfolioDataRaw {
       "apkUrl": "https://github.com/AhmedGreynoon/nasha-app/releases"
     },
     {
-      "id": "until",
-      "title": "Until",
-      "tagline": "Minimalist countdown timer and life milestone tracker built with zero visual clutter.",
-      "shortDescription": "A pure monochromatic countdown timer app built with Flutter, Riverpod, and SQLite. Emphasizes typographic hierarchy, smooth animations, and battery-friendly background notifications.",
-      "myRole": "Designed and engineered the minimalist countdown timer application from conception to open-source release.",
+      "id": "all-recipes-cooking",
+      "title": "All Recipes",
+      "tagline": "Feature-rich culinary browsing and step-by-step cooking companion application.",
+      "shortDescription": "A modern recipe discovery and culinary guide application built with Flutter, Riverpod, and Clean Architecture. Features categorized recipe exploration, detailed ingredient breakdowns, step-by-step cooking directions, nutritional analytics, and instant multi-language switching.",
+      "myRole": "Mobile Application Engineer responsible for architectural engineering, reactive state management, REST API integration, and localization.",
       "roleContributions": [
-        "Engineered a lightweight monochromatic design system emphasizing stark typography and subtle animations.",
-        "Implemented efficient background timers and milestone notifications with near-zero battery consumption.",
-        "Structured persistent local storage using SQLite with seamless reactive UI updates via Riverpod.",
-        "Published the complete codebase on GitHub as a reference implementation for clean Riverpod state patterns."
+        "Architected modular feature-first Clean Architecture separating presentation, domain, and data layers.",
+        "Engineered reactive state management with Riverpod (annotations & generators) for recipe feeds, categories, and bookmarks.",
+        "Integrated REST APIs using Dio with interceptors for structured JSON payload handling and error resilience.",
+        "Implemented responsive UI with ScreenUtil, Staggered Grid layouts, and shimmer loading animations.",
+        "Configured full multi-language localization (Arabic & English) with seamless runtime switching and RTL/LTR layout adaptability."
       ],
-      "coverImage": "images/projects/until.svg",
-      "tags": ["Flutter", "Dart", "Riverpod", "SQLite"],
-      "repoUrl": "https://github.com/AGreynoon/countdown_timer",
-      "apkUrl": "https://github.com/AhmedGreynoon/until-app/releases"
+      "logo": "images/project_images/all-recipes-cooking/logo.png",
+      "screenshots": [
+        "images/project_images/all-recipes-cooking/01.png",
+        "images/project_images/all-recipes-cooking/02.png",
+        "images/project_images/all-recipes-cooking/03.png",
+        "images/project_images/all-recipes-cooking/04.png",
+        "images/project_images/all-recipes-cooking/05.png",
+        "images/project_images/all-recipes-cooking/06.png"
+      ],
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Riverpod",
+        "Clean Architecture",
+        "REST APIs",
+        "Dio",
+        "GoRouter",
+        "Multi-Language (i18n)",
+        "ScreenUtil"
+      ],
+      "repoUrl": "https://github.com/aldeerah400/All-recipes-cooking-Mobile"
     }
   ]
 }''';
@@ -429,16 +444,17 @@ abstract final class PortfolioDataRaw {
       ]
     },
     {
-      "id": "until",
-      "title": "حتى",
-      "tagline": "تطبيق عد تنازلي وتتبع للأحداث الهامة في الحياة بتصميم نقي وبسيط وخالٍ من المشتتات.",
-      "shortDescription": "تطبيق عد تنازلي أحادي اللون مبني باستخدام Flutter و Riverpod و SQLite. يركز على نقاء الخطوط وسلاسة الحركات مع استهلاك معدوم للبطارية في الخلفية.",
-      "myRole": "تصميم وتطوير تطبيق العد التنازلي وتتبع الأحداث البسيط من الفكرة وحتى الإطلاق كمشروع مفتوح المصدر.",
+      "id": "all-recipes-cooking",
+      "title": "جميع الوصفات",
+      "tagline": "تطبيق شامل لتصفح واكتشاف وصفات الطهي بدعم متعدد اللغات وخطوات تحضير تفاعلية.",
+      "shortDescription": "تطبيق جوال غني بالميزات لاستعراض وصفات الطبخ العالمية وتصنيفاتها، مبني باستخدام Flutter و Riverpod و Clean Architecture. يوفر إرشادات طبخ تفصيلية وقيم غذائية وتجربة مستخدم سلسة باللغتين العربية والإنجليزية.",
+      "myRole": "مهندس برمجيات الجوال ومسؤول عن هندسة المعمارية وإدارة الحالة وتكامل واجهات برمجة التطبيقات ودعم اللغات.",
       "roleContributions": [
-        "تصميم وتطوير نظام بصري أحادي اللون (Monochromatic) يركز على نقاء الخطوط والحركات التفاعلية الهادئة.",
-        "برمجة مؤقتات دقيقة وإشعارات ذكية للمناسبات القادمة باستهلاك شبه معدوم لبطارية الجهاز.",
-        "بناء طبقة التخزين المحلي باستخدام SQLite مع تحديثات تفاعلية لحظية للواجهة عبر Riverpod.",
-        "نشر الكود المصدري بالكامل على GitHub كمرجع تطبيقي لبناء تطبيقات فلاتر بمعمارية نظيفة عبر Riverpod."
+        "تصميم وهندسة بنية معمارية معيارية (Feature-First Clean Architecture) تفصل طبقات البيانات ونطاق العمل والواجهات.",
+        "بناء نظام إدارة حالة تفاعلي باستخدام Riverpod مع معالجة متقدمة لتدفق البيانات وتحديث القوائم.",
+        "تكامل كامل مع واجهات RESTful APIs عبر Dio لجلب وتصنيف الوصفات والبحث المتقدم وعرض المكونات والقيم الغذائية.",
+        "بناء واجهات مستخدم متجاوبة (Responsive) وسلسة باستخدام ScreenUtil و Staggered Grid مع تأثيرات Shimmer أثناء التحميل.",
+        "تطبيق دعم تعدد اللغات (العربية، الإنجليزية، وغيرها) مع تبديل لحظي ودعم كامل لاتجاهات RTL و LTR."
       ]
     }
   ]
