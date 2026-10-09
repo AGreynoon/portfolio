@@ -19,5 +19,5 @@ dev_dependencies:
 
 jaspr:
   mode: static
-  flutter: plugins
   port: 8085
+
