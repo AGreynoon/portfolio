@@ -289,7 +289,7 @@ abstract final class PortfolioDataRaw {
         "Multi-Language (i18n)",
         "ScreenUtil"
       ],
-      "repoUrl": "https://github.com/aldeerah400/All-recipes-cooking-Mobile"
+      "apkUrl": "https://drive.google.com/file/d/1P9PMtw8gDLqs-i4ZdF8IWyJwNclJ6i_f/view?usp=drive_link"
     }
   ]
 }''';
