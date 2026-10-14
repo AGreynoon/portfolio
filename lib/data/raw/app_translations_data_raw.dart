@@ -86,7 +86,7 @@ abstract final class AppTranslationsDataRaw {
     "directWhatsApp": "واتساب مباشر: 105 633 734 967+"
   },
   "footer": {
-    "copyright": "© 2026 أحمد أمين جرينون. صُمم بأناقة باستخدام Jaspr (Dart)."
+    "copyright": "© 2026 أحمد أمين قرينون. صُمم بأناقة باستخدام Jaspr (Dart)."
   },
   "actions": {
     "playStore": "جوجل بلاي",

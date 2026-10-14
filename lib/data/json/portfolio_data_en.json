@@ -1,7 +1,7 @@
 {
   "name": "Ahmed Ameen Greynoon",
-  "title": "Mid-Level Flutter Developer",
-  "bio": "Mid-Level Flutter Developer specializing in building scalable, offline-first mobile applications with Flutter, Dart, Riverpod, Clean Architecture, and MVVM patterns. Proven track record leading mobile workflows, engineering resilient modular architectures, and automating CI/CD delivery pipelines.",
+  "title": "Flutter Developer",
+  "bio": "Mobile Application Developer specializing in building scalable mobile applications with Flutter, Dart, Riverpod, Clean Architecture, and MVVM patterns. Proven track record leading mobile workflows, engineering resilient modular architectures, and automating CI/CD delivery pipelines.",
   "avatarUrl": "images/profile.jpg",
   "socialLinks": [
     {
@@ -75,7 +75,7 @@
           ]
         },
         {
-          "role": "Technical Support Specialist",
+          "role": "Technical Support Staff",
           "period": "03/2023 - 11/2024",
           "employmentType": "Full-time",
           "achievements": [
@@ -249,7 +249,7 @@
         "images/project_images/nasha/12.png"
       ],
       "tags": ["Flutter", "Dart", "Riverpod", "ML Kit OCR", "SQLite", "REST APIs"],
-      "apkUrl": "https://github.com/AhmedGreynoon/nasha-app/releases"
+      "apkUrl": "https://drive.google.com/file/d/1OiY2B5Bkq2ftFkWe2-06vFgOBwJrNITk/view?usp=drive_link"
     },
     {
       "id": "all-recipes-cooking",
